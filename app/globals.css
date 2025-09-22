@@ -1,0 +1,10 @@
+/* stylelint-disable at-rule-no-unknown */
+/* postcss-syntax: tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+  @apply bg-cover bg-center;
+  background-image: url('/hero-bg.jpg');
+}
