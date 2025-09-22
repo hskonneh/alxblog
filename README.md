@@ -1,15 +1,15 @@
 # TechBlog: A Next.js Blogging Platform
 
-TechBlog is a modern, responsive, and fully-functional blogging web page built with Next.js, TypeScript, and Tailwind CSS. The theme of the blog is centered around technology, featuring a clean and dark design with vibrant blue accents.
+TechBlog is a modern, responsive, and fully-functional blogging web page built with Next.js, TypeScript, and Tailwind CSS. The theme of the blog is centered around technology, featuring a clean, dark design with subtle blue accents. This version of TechBlog uses a default dark theme and hardcoded blog posts without external image links, focusing on content and readability.
 
 ## Project Overview
 
-This project serves as a template for a standard blogging website. It includes a home page with a hero section, a list of latest blog posts, and a footer. The application is designed to be easily customizable and extensible.
+This project serves as a template for a standard blogging website. It includes a home page with a hero section, a list of latest blog posts displayed in card layouts, and a footer. The application is designed to be easily customizable and extensible.
 
 **🔖 Project Title & Description**
 
 - **Title:** TechBlog: A Next.js Blogging Platform
-- **Description:** A modern, responsive blogging platform built with Next.js, TypeScript, and Tailwind CSS. Designed for tech enthusiasts, this platform provides a clean, dark-themed interface with vibrant blue accents, delivering the latest insights in technology and trends.
+- **Description:** A modern, responsive blogging platform built with Next.js, TypeScript, and Tailwind CSS. Designed for tech enthusiasts, this platform provides a clean, dark-themed interface with subtle blue accents, delivering the latest insights in technology and trends. This version emphasizes a minimalist design by using hardcoded content without image assets in the blog posts.
 
 ## Tech Stack
 
@@ -30,38 +30,32 @@ This project serves as a template for a standard blogging website. It includes a
 The project follows the standard Next.js App Router structure:
 
 ```
-C:\Users\LENIVO\Documents\AI for Dev\cstone\ai4dev_capstone\alx-blog\
+C:\Users\LENIVO\Documents\AI for Dev\cstone\alxblog\
 ├───.gitignore
 ├───next.config.ts
-├───package-lock.json
 ├───package.json
 ├───postcss.config.mjs
 ├───README.md
 ├───tsconfig.json
-├───.next\
-│   ├───cache...
-│   ├───server...
-│   ├───static...
-│   └───types...
 ├───app\
 │   ├───favicon.ico
 │   ├───globals.css
 │   ├───layout.tsx
-│   └───page.tsx
-├───node_modules...
-└───public\
-    ├───file.svg
-    ├───globe.svg
-    ├───next.svg
-    ├───vercel.svg
-    └───window.svg
+│   └───page.tsx  // Contains the home page with hardcoded blog posts and a dark theme
+├───public\
+│   ├───file.svg
+│   ├───globe.svg
+│   ├───next.svg
+│   ├───vercel.svg
+│   └───window.svg
+└───node_modules\
 ```
 
 *   `app/`: Contains the core application code, including pages and layouts.
-    *   `layout.tsx`: The root layout of the application.
-    *   `page.tsx`: The main page of the application.
-    *   `globals.css`: Global styles for the application.
-*   `public/`: Contains static assets like images and fonts.
+    *   `layout.tsx`: The root layout of the application with global styles imported from `globals.css`.
+    *   `page.tsx`: The main page of the application. This version of `page.tsx` implements a dark theme and displays blog posts as cards with hardcoded text content (no images).
+    *   `globals.css`: Global styles for the application, including theme definitions.
+*   `public/`: Contains static assets like SVG icons used across the site.
 *   `package.json`: Defines the project's dependencies and scripts.
 *   `next.config.ts`: Configuration file for Next.js.
 *   `tailwind.config.ts`: Configuration file for Tailwind CSS.
